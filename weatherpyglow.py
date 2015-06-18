@@ -30,7 +30,7 @@ elif weather in ["mixed rain and snow" , "mixed snow and sleet" , "freezing driz
 elif weather in ["severe thunderstorms", "thunderstorms", "isolated thunderstorms" , "scattered thunderstorms" , "thundershowers"]:
     pyglow.color("red", brightness=150, speed=4000, pulse=True)
 
-elif weather in ["mixed rain and sleet" , "drizzle" , "showers" , "scattered showers" , "mixed rain and hail"] :
+elif weather in ["mixed rain and sleet" , "drizzle" , "showers" , "scattered showers" , "mixed rain and hail" , "rain"] :
     pyglow.color("blue", 150)
 	
 elif weather in ["windy" , "cold"]:
