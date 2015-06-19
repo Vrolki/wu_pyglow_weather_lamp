@@ -21,7 +21,7 @@ weather = string.lower(weather)
 pyglow = PyGlow() #Setup piglow and turn all off
 pyglow.all(0)
 
-if weather in ["partly cloudy", "mostly cloudy", "cloudy", "overcast"]: 
+if weather in ["partly cloudy", "mostly cloudy", "cloudy", "overcast", "scattered clouds"]: 
     pyglow.color("white", 150)
      
 elif weather in ["mixed rain and snow" , "mixed snow and sleet" , "freezing drizzle" , "freezing rain" , "snow flurries" , "light snow showers" , "blowing snow" , "snow" , "hail" , "sleet" , "dust" , "heavy snow" , "scattered snow showers" , "snow showers" , "light snow", "light snow grains"]:
