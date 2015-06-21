@@ -4,12 +4,13 @@ from time import sleep
 import urllib2
 import json
 
-f = urllib2.urlopen('http://api.wunderground.com/api/0c3acb7d79bd4f22/geolookup/q/autoip.json')
+# get <your API key> from http://www.wunderground.com/weather/api 
+f = urllib2.urlopen('http://api.wunderground.com/api/<your API key>/geolookup/q/autoip.json')
 json_string = f.read()
 parsed_json = json.loads(json_string)
 zip = parsed_json['location']['zip']
 
-f = urllib2.urlopen('http://api.wunderground.com/api/0c3acb7d79bd4f22/geolookup/conditions/q/%s.json' % (zip))
+f = urllib2.urlopen('http://api.wunderground.com/api/<your API key>/geolookup/conditions/q/%s.json' % (zip))
 json_string = f.read()
 parsed_json = json.loads(json_string)
 location = parsed_json['location']['city']
